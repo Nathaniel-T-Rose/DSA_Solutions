@@ -11,7 +11,7 @@ def containsDuplicate(self, nums: List[int]) -> bool:
 
 
 #sort list, if current matches prev, return true O(n)
-def containsDuplicate2(self, nums: List[int]) -> bool:
+def containsDuplicate2(num) -> bool:
         nums.sort()
         prev=None
         for num in nums:

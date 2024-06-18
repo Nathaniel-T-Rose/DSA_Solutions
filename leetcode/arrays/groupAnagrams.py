@@ -1,4 +1,4 @@
-def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+def groupAnagrams(strs):
     
     # Use 'sorted' string as key to all anagrams in dictionary, return list of all anagram lists
     
