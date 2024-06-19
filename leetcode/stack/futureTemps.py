@@ -1,7 +1,7 @@
 
 class Solution:
     #initial approach, will time out on larger 
-    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+    def dailyTemperatures(self, temperatures):
         #what do i care about? - distance to next maximum 
         #iterate from end, store index:temp val
         #for each, iterate up through hash vals to find next 
