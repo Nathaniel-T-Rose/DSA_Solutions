@@ -1,14 +1,12 @@
-class Solution:
-    def findMin(self, nums: List[int]) -> int:
+def findMin(self, nums: List[int]) -> int:
         end=len(nums)-1
         start=0
-        while start!=end:
+        minimum=nums[end]
+        while start<end:
             k=(start+end)//2
-            print(k,start,end)
-            if nums[k+1]<nums[k]:
+            if nums[k+1]<nums[k] or nums[k]>minimum:
                 start=k+1
             else:
                 end=k
-        return nums[start]
-
-#currently failing on min on edge
+                minimum=nums[k]
+        return minimum
